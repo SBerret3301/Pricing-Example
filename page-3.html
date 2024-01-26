@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Document title -->
+    <title>Pricing Example</title>
+</head>
+<style>
+    /* Custom styling */
+    .c1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .c1 div {
+        display: flex;
+        align-items: center;
+    }
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    header {
+        border-bottom: 1px solid rgb(158, 154, 154);
+        margin: 0px 10px;
+    }
+    .card-header {
+        background-color: rgb(205, 224, 224);
+    }
+</style>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container-fluid p-1 c1">
+            <div>
+                <!-- Bootstrap icon and header text -->
+                <img src="bootstrap_icon_195906.ico" alt="bootstrap">
+                <h4>Pricing Example</h4>
+            </div>
+            <!-- Navigation links -->
+            <nav class="navbar navbar-expand-sm bg-light justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Company</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pricing Information Section -->
+    <div class="container mt-5 text-center">
+        <h1>Pricing</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tenetur animi suscipit corporis dolorum itaque soluta eaque? Id officia et quasi ex ea voluptates similique quibusdam praesentium provident! Reiciendis, in!</p>
+    </div>
+
+    <!-- Pricing Cards Section -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Pricing Card - Free -->
+            <div class="col-4">
+                <div class="card border-secondary">
+                    <div class="card-header">
+                        <h4 class="card-title text-center">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                            <h1>0$ <span>/month</span></h1>
+                            <p>10 users included, 2 GB storage</p>
+                            <p>Email support</p>
+                            <p>Access to help center</p>
+                        </div>
+                        <div class="d-grid gap-3">
+                            <button type="submit" class="btn btn-outline-primary d-block">Sign Up for Free</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Card - Pro -->
+            <div class="col-4">
+                <div class="card border-secondary">
+                    <div class="card-header">
+                        <h4 class="card-title text-center">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                            <h1>15$ <span>/month</span></h1>
+                            <p>20 users included, 10 GB storage</p>
+                            <p>Email support</p>
+                            <p>Access to help center</p>
+                        </div>
+                        <div class="d-grid gap-3">
+                            <button type="submit" class="btn btn-primary d-block">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Card - Enterprise -->
+            <div class="col-4">
+                <div class="card border-primary">
+                    <div class="card-header bg-primary">
+                        <h4 class="card-title text-center text-white">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                            <h1>29$ <span>/month</span></h1>
+                            <p>30 users included, 15 GB storage</p>
+                            <p>Phone and email support</p>
+                            <p>Access to help center</p>
+                        </div>
+                        <div class="d-grid gap-3">
+                            <button type="submit" class="btn btn-primary d-block">Sign Up for Free</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Table Section -->
+    <h1 class="text-secondary text-center m-3">Compare Plans</h1>
+    <!-- Table with pricing options -->
+<table class="table m-3 border-secondary">
+    <thead>
+        <tr>
+            <th></th>
+            <th class="text-center">Free</th>
+            <th class="text-center">Pro</th>
+            <th class="text-center">Enterprise</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Public row -->
+        <tr>
+            <th>Public</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something" checked>
+                </div>
+            </td>
+        </tr>
+        <!-- Private row -->
+        <tr>
+            <th>Private</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check4" name="option4" value="something">
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check5" name="option5" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check6" name="option6" value="something" checked>
+                </div>
+            </td>
+        </tr>
+        <!-- Authorization row -->
+        <tr>
+            <th>Authorization</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check8" name="option8" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check9" name="option9" value="something" checked>
+                </div>
+            </td>
+        </tr>
+        <!-- Sharing row -->
+        <tr>
+            <th>Sharing</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check10" name="option10" value="something">
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check11" name="option11" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check12" name="option12" value="something" checked>
+                </div>
+            </td>
+        </tr>
+        <!-- Unlimited members row -->
+        <tr>
+            <th>Unlimited Members</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check13" name="option13" value="something">
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check14" name="option14" value="something" checked>
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check15" name="option15" value="something" checked>
+                </div>
+            </td>
+        </tr>
+        <!-- Additional Security row -->
+        <tr>
+            <th>Additional Security</th>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check16" name="option16" value="something">
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input " id="check17" name="option17" value="something">
+                </div>
+            </td>
+            <td>
+                <div class="form-check justify-content-center d-flex">
+                    <input type="checkbox" class="form-check-input" id="check18" name="option18" value="something" checked>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
